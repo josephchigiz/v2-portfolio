@@ -1,0 +1,76 @@
+* {
+	font-family: "Poppins", sans-serif;
+}
+
+body {
+	margin: 0 auto;
+}
+
+.handlee-regular {
+	font-family: "Handlee", cursive;
+	font-weight: 400;
+	font-style: normal;
+}
+
+header {
+	background-image: url(assets/bg-mobile.png);
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.hero-img {
+	width: 300px;
+	height: auto;
+}
+
+@media (min-width: 600px) {
+	header {
+		background-image: url(assets/bg-desktop.png);
+		height: 100vh;
+	}
+
+	.hero-img {
+		width: 440px;
+		height: auto;
+	}
+}
+
+.shout {
+	font-weight: 600;
+	font-size: 50px;
+	text-align: center;
+}
+
+.squeeze {
+	letter-spacing: -8px;
+}
+
+.logo-custom {
+	letter-spacing: -2px;
+}
+
+.ham-menu {
+	border: none;
+	color: #717171;
+	font-size: 1.2rem;
+	letter-spacing: -1px;
+	font-weight: 300;
+}
+
+.header-hr {
+	border: 1px solid black;
+	height: 0px;
+}
+
+.about-bubble {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+	background-color: #c4cdf4;
+	border-radius: 50%;
+	width: 100px;
+	height: 110px;
+	padding: 0;
+}
