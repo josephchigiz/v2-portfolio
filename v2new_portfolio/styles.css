@@ -13,6 +13,7 @@ body {
 }
 
 header {
+	position: relative;
 	background-image: url(assets/bg-mobile.png);
 	background-position: center;
 	background-repeat: no-repeat;
@@ -22,6 +23,8 @@ header {
 
 .scroll-down {
 	color: #a5a5a5;
+	position: absolute;
+	bottom: 0;
 }
 
 .hero-img {
