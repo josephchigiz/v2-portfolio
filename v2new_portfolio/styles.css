@@ -73,4 +73,95 @@ header {
 	width: 100px;
 	height: 110px;
 	padding: 0;
+
+	transition: all 200ms ease-in-out;
+}
+
+.about-bubble:hover {
+	/* transform: scaleY(1.2); */
+	transform: translate3d(0, -0.125rem, 0);
+}
+
+.p1-projects {
+	font-size: 20px;
+	font-weight: 500;
+}
+.p2-projects {
+	font-size: 14px;
+	font-weight: 300;
+}
+
+.projects hr {
+	height: 0;
+	border: 1px solid black;
+}
+
+.btn-more-custom {
+	padding: 10px 15px;
+	border: 1px solid #cccccc;
+	border-radius: 30px;
+	background-color: #fef3f3;
+	color: #414141;
+}
+
+.contact {
+	background-color: #1c1d20;
+}
+
+.contact-img {
+	margin-bottom: 0;
+}
+
+.p-br {
+	color: white;
+	font-size: 32px;
+	font-weight: 500;
+}
+
+.profile-pic {
+	display: flex;
+}
+
+.profile-pic img {
+	height: 45px;
+	width: auto;
+}
+
+.contact hr {
+	height: 0;
+	border: 1px solid white;
+}
+
+.btn-contact {
+	height: 110px;
+	width: 110px;
+	color: #242727;
+	background-color: rgba(196, 205, 244, 100%);
+	border: none;
+	margin-top: -150px;
+	z-index: 5;
+}
+
+.btn-email-phone {
+	box-sizing: border-box;
+	padding: 10px 15px;
+	border: 1px solid #c5c5c5;
+	background-color: #1c1d20;
+	color: white;
+	border-radius: 30px;
+	font-weight: 300;
+	font-size: 14px;
+	min-width: 200px;
+}
+
+.lets-connect {
+	color: #999d9e;
+}
+
+.contact li {
+	font-size: 14px;
+}
+
+.footer p {
+	font-size: 14px;
 }
