@@ -41,7 +41,7 @@ nav,
 	justify-content: center;
 	text-align: center;
 	background-color: #c4cdf4;
-	color: black;
+	color: #242727;
 	border-radius: 50%;
 	width: 130px;
 	height: 130px;
@@ -50,11 +50,15 @@ nav,
 	transition: all 500ms ease-in-out;
 }
 
+/* .about-bubble a {
+	color: white;
+} */
+
 .about-bubble:hover {
 	/* transform: scaleY(1.2); */
 	transform: translate3d(0, -1.125rem, 0);
 	background-color: #c4cdf4;
-	color: black;
+	color: #242727;
 }
 
 .shout {
@@ -149,7 +153,6 @@ nav,
 .btn-contact {
 	height: 110px;
 	width: 110px;
-	font-weight: bold;
 	color: #242727;
 	background-color: #c4cdf4;
 	border: none;
@@ -158,11 +161,18 @@ nav,
 	transition: all 500ms ease-in-out;
 }
 
+.btn-contact a {
+	color: #242727;
+}
+
 .btn-contact:hover {
 	/* transform: scaleY(1.2); */
 	transform: translate3d(0, -1.125rem, 0);
 	background-color: #4055b3;
-	color: white;
+
+	a {
+		color: white;
+	}
 }
 
 .btn-email-phone {
