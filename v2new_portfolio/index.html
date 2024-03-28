@@ -29,7 +29,9 @@
 	<body>
 		<!--* Navbar -->
 		<header class="pb-5">
-			<nav class="navbar navbar-expand-lg pt-4 px-4">
+			<nav
+				class="navbar navbar-expand-lg px-lg-5 pt-lg-4 px-3 pt-3 mx-lg-auto"
+			>
 				<div class="container-fluid">
 					<div class="logo-custom fs-5" href="#">@theJoernal</div>
 					<button
@@ -43,77 +45,78 @@
 					>
 						<span class="ham-menu">.Menu</span>
 					</button>
-					<div
-						class="collapse navbar-collapse"
-						id="navbarNavAltMarkup"
-					>
-						<div class="navbar-nav">
-							<a
-								class="nav-link active"
-								aria-current="page"
-								href="#"
-								>Home</a
-							>
-							<a class="nav-link" href="#">Work</a>
-							<a class="nav-link" href="#">About</a>
-							<a class="nav-link" href="#">Contact</a>
-						</div>
+				</div>
+				<div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+					<div class="navbar-nav ps-4">
+						<!-- <a class="nav-link active" aria-current="page" href="#"
+							>Home</a
+						> -->
+						<a class="nav-link px-lg-3" href="#about">About</a>
+						<a class="nav-link px-lg-3" href="#work">Work</a>
+						<a class="nav-link px-lg-3" href="#contact">Contact</a>
 					</div>
 				</div>
 			</nav>
 
-			<div class="container-fluid px-4">
-				<div class="col-12 text-center">
+			<div
+				class="hero-desktop row container-fluid px-4 pt-4 pt-lg-0 justify-content-lg-center align-items-lg-center mt-lg-4 mb-lg-5 mx-lg-auto"
+			>
+				<div class="col-lg col-12 text-center text-lg-end col-lg-6">
 					<img src="assets/heroImg.png" class="hero-img" alt="" />
 				</div>
-				<div class="col-12 mb-3">
-					<p class="shout mb-0">
-						<span class="squeeze">Joe</span>
-						Here!
-					</p>
+				<div class="col-lg col-lg-6 pt-lg-5">
+					<div class="col-12 mb-3 text-center">
+						<p class="shout mb-0">
+							<span class="squeeze">Joe</span>
+							Here!
+						</p>
+					</div>
+					<div
+						class="row col-12 mx-0 text-center d-flex align-items-center"
+					>
+						<hr class="col col-2 header-hr d-lg-none" />
+						<p class="col col-8 col-lg-12 fs-1 px-0">
+							I
+							<span class="handlee-regular">write</span>, design
+							and develop. <br />Love it!
+						</p>
+						<hr class="col col-2 header-hr px-0 d-lg-none" />
+					</div>
 				</div>
-				<div
-					class="row col-12 mx-0 text-center d-flex align-items-center"
-				>
-					<hr class="col col-2 header-hr" />
-					<p class="col col-8 fs-1 px-0">
-						I <span class="handlee-regular">write</span>, design and
-						develop. Love it!
-					</p>
-					<hr class="col col-2 header-hr px-0" />
-				</div>
-			</div>
-
-			<div class="mb-0 pb-0 col-12 text-center px-0 mx-0">
-				<p class="col-12 scroll-down fw-light pb-0 mb-0">Scroll Down</p>
 			</div>
 		</header>
 
-		<section class="mb-5">
-			<div class="container-fluid col-12 mx-auto">
-				<p class="col-11 fw-medium fs-3 mx-auto my-5">
+		<section
+			id="about"
+			class="container row col-lg-12 px-lg-5 text-lg-start about-desktop pt-5 mx-auto"
+		>
+			<div class="container-fluid col-12 col-lg-8 col-md-10">
+				<p class="col-11 fs-2 fw-regular mx-auto my-5">
 					Working on creative, playful and unique designs to make you
 					or your business stand out in the digital space.
 				</p>
 			</div>
-			<div class="container-fluid row col-12 my-5">
-				<p class="col col-7 mx-auto fw-light">
+			<div class="container-fluid row col-12 col-lg-4 col-md-12 my-5">
+				<p class="col col-7 col-lg-12 col-md-6 mx-auto fw-light fs-5">
 					Creativity, curiosity and passion fuel my work, ensuring I
 					deliver the best.
 				</p>
-				<div class="col col-4 fw-semibold about-bubble px-0">
-					<a href="#" class="link-underline link-underline-opacity-0"
-						><p class="m-0 text-black">
-							About <br />
-							me
-						</p></a
+				<div
+					class="col col-4 col-lg-3 col-md-3 fw-semibold px-0 px-lg-0 mt-lg-5"
+				>
+					<button
+						id="abtBounce"
+						class="about-bubble offset-lg-12 fw-medium"
 					>
+						About <br />
+						me
+					</button>
 				</div>
 			</div>
 		</section>
 
-		<section class="my-5 projects">
-			<div class="container-fluid my-5">
+		<section id="work" class="mb-5 projects d-lg-none">
+			<div class="container my-5">
 				<div class="container-fluid text-center col col-12 mb-3">
 					<img class="col-11" src="assets/portfolioV1.png" alt="" />
 				</div>
@@ -127,7 +130,7 @@
 				</div>
 			</div>
 
-			<div class="container-fluid my-5">
+			<div class="container my-5">
 				<div class="container-fluid text-center col col-12 mb-3">
 					<img
 						class="col-11"
@@ -150,17 +153,61 @@
 			</div>
 		</section>
 
-		<section class="contact pt-5">
-			<div>
+		<section
+			id="work"
+			class="projects-desktop d-none d-lg-flex text-lg-start"
+		>
+			<div class="container my-5">
+				<hr class="mx-auto col-10 mb-5" />
+				<div
+					class="v1-desktop container-fluid text-center row col-11 mb-5 mx-auto d-flex align-items-center justify-content-between"
+				>
+					<p class="col-6 fs-1 mb-0">Ochego V1 Portfolio</p>
+					<img
+						src="assets/portfolioV1.png"
+						alt=""
+						class="v1-desktop-img"
+					/>
+					<span class="col-3 fs-5">Development & Showcase</span>
+				</div>
+
+				<hr class="mx-auto col-10 mb-5" />
+
+				<div
+					class="container-fluid text-center row col-11 mb-5 mx-auto d-flex align-items-center justify-content-between"
+				>
+					<p class="col-6 fs-1 mb-0">MKBHD Clone Site</p>
+					<span class="col-3 fs-5">Responsive Design</span>
+				</div>
+
+				<hr class="mx-auto col-10 mb-5" />
+
+				<div
+					class="container-fluid text-center row col-11 mb-5 mx-auto d-flex align-items-center justify-content-between"
+				>
+					<p class="col-6 fs-1 mb-0">theJoernal Blog Page</p>
+					<span class="col-3 fs-5">Static Page Generation</span>
+				</div>
+
+				<hr class="mx-auto col-10 mb-5" />
+			</div>
+		</section>
+
+		<div class="col-12 text-center my-5 pb-5 d-none d-lg-block">
+			<button class="btn-more-custom">More Work &rarr;</button>
+		</div>
+
+		<section id="contact" class="contact pt-5 mt-5">
+			<div class="container">
 				<div class="profile-pic mt-4">
 					<img
 						src="assets/contact-image.png"
 						alt=""
 						class="offset-1"
 					/>
-					<p class="p-br mb-0">Let's Work</p>
+					<p class="p-br mb-0 lets-work-together">Let's Work</p>
 				</div>
-				<p class="p-br offset-1">Together</p>
+				<p class="p-br offset-1 lets-work-together">Together</p>
 
 				<hr class="col-11 mx-auto my-0 py-0" />
 				<button class="rounded-circle offset-7 btn-contact">
@@ -170,41 +217,75 @@
 			</div>
 
 			<div>
-				<div class="col-12 text-center py-5">
-					<button class="d-block btn-email-phone mx-auto my-4">
+				<div class="col-12 text-center py-5 row">
+					<button
+						class="d-block col-7 btn-email-phone mx-auto my-4 col-lg-4 me-lg-3"
+					>
 						ochegoatwork@gmail.com
 					</button>
-					<button class="d-block btn-email-phone mx-auto">
+					<button
+						class="d-block col-7 btn-email-phone mx-auto my-lg-4 col-lg-4 ms-lg-3"
+					>
 						+112-2334-4556
 					</button>
 				</div>
 			</div>
 
-			<div class="col-12 pt-5 pb-4">
-				<p class="offset-1 text-decoration-underline lets-connect mb-2">
-					Let’s Connect:
-				</p>
-				<ul
-					class="list-group list-group-horizontal list-unstyled offset-1 text-white"
-				>
-					<li class="pe-3 fw-light">Github</li>
-					<li class="pe-3 fw-light">LinkedIn</li>
-					<li class="pe-3 fw-light">Twitter</li>
-					<li class="pe-3 fw-light">Instagram</li>
-				</ul>
-			</div>
+			<div
+				class="container row align-items-lg-end mb-lg-0 pb-lg-5 justify-content-lg-between mx-auto"
+			>
+				<div class="mb-lg-0 col-12 pt-5 pb-4 col-lg-6 pb-lg-0">
+					<p
+						class="mb-lg-0 offset-1 text-decoration-underline lets-connect mb-2"
+					>
+						Let’s Connect:
+					</p>
+					<ul
+						class="list-group list-group-horizontal list-unstyled offset-1 text-white mb-lg-0"
+					>
+						<li class="pe-3 fw-light">
+							<a
+								class="link-underline link-underline-opacity-0 text-white"
+								href="https://github.com/josephchigiz"
+								>Github</a
+							>
+						</li>
+						<li class="pe-3 fw-light">
+							<a
+								class="link-underline link-underline-opacity-0 text-white"
+								href="www.linkedin.com/in/joseph-ochego"
+								>LinkedIn</a
+							>
+						</li>
+						<li class="pe-3 fw-light">
+							<a
+								class="link-underline link-underline-opacity-0 text-white"
+								href="https://twitter.com/i_am_ochego"
+								>Twitter</a
+							>
+						</li>
+						<li class="pe-3 fw-light">
+							<a
+								class="link-underline link-underline-opacity-0 text-white"
+								href="https://www.instagram.com/joe__graphic/"
+								>Instagram</a
+							>
+						</li>
+					</ul>
+				</div>
 
-			<hr class="col-11 mx-auto my-0 py-0" />
+				<hr class="col-11 mx-auto my-0 py-0 d-lg-none" />
 
-			<div class="row footer pt-4">
-				<p class="col col-7 text-white offset-1">
-					&copy; 2024 V2 OCHEGO
-				</p>
-				<a
-					href="#"
-					class="col col-4 link-underline link-underline-opacity-0 fw-bold"
-					><p class="text-white ps-5">&uarr; up</p></a
-				>
+				<div class="row footer pt-4 col-lg-5 mb-lg-0">
+					<p class="col col-7 text-white offset-1 mb-lg-0">
+						&copy; 2024 V2 OCHEGO
+					</p>
+					<a
+						href="#"
+						class="mb-lg-0 col col-4 link-underline link-underline-opacity-0 fw-bold"
+						><p class="text-info fs-6 ps-5 mb-lg-0">&uarr; up</p></a
+					>
+				</div>
 			</div>
 		</section>
 		<script src="app.js"></script>

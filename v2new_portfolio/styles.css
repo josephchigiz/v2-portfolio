@@ -13,17 +13,20 @@ body {
 }
 
 header {
-	position: relative;
 	background-image: url(assets/bg-mobile.png);
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: cover;
-	height: 100vh;
+	/* height: 100vh; */
+}
+
+nav,
+.hero-desktop {
+	max-width: 1100px;
 }
 
 .scroll-down {
 	color: #a5a5a5;
-	position: absolute;
 	bottom: 0;
 }
 
@@ -32,26 +35,35 @@ header {
 	height: auto;
 }
 
-@media (min-width: 600px) {
-	header {
-		background-image: url(assets/bg-desktop.png);
-		height: 100vh;
-	}
+.about-bubble {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+	background-color: #c4cdf4;
+	color: black;
+	border-radius: 50%;
+	width: 130px;
+	height: 130px;
+	padding: 0;
+	border: none;
+	transition: all 500ms ease-in-out;
+}
 
-	.hero-img {
-		width: 440px;
-		height: auto;
-	}
+.about-bubble:hover {
+	/* transform: scaleY(1.2); */
+	transform: translate3d(0, -1.125rem, 0);
+	background-color: #c4cdf4;
+	color: black;
 }
 
 .shout {
 	font-weight: 600;
 	font-size: 50px;
-	text-align: center;
 }
 
 .squeeze {
-	letter-spacing: -8px;
+	letter-spacing: -7px;
 }
 
 .logo-custom {
@@ -71,23 +83,9 @@ header {
 	height: 0px;
 }
 
-.about-bubble {
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	text-align: center;
-	background-color: #c4cdf4;
-	border-radius: 50%;
-	width: 100px;
-	height: 110px;
-	padding: 0;
-
-	transition: all 200ms ease-in-out;
-}
-
-.about-bubble:hover {
-	/* transform: scaleY(1.2); */
-	transform: translate3d(0, -0.125rem, 0);
+.about-desktop {
+	max-width: 1100px;
+	margin: 0 auto;
 }
 
 .p1-projects {
@@ -110,6 +108,14 @@ header {
 	border-radius: 30px;
 	background-color: #fef3f3;
 	color: #414141;
+	transition: all 400ms ease-in-out;
+}
+
+.btn-more-custom:hover {
+	/* transform: scaleY(1.2); */
+	transform: translate3d(0, -1.125rem, 0);
+	/* background-color: #4055b3;
+	color: white; */
 }
 
 .contact {
@@ -143,11 +149,20 @@ header {
 .btn-contact {
 	height: 110px;
 	width: 110px;
+	font-weight: bold;
 	color: #242727;
-	background-color: rgba(196, 205, 244, 100%);
+	background-color: #c4cdf4;
 	border: none;
 	margin-top: -150px;
 	z-index: 5;
+	transition: all 500ms ease-in-out;
+}
+
+.btn-contact:hover {
+	/* transform: scaleY(1.2); */
+	transform: translate3d(0, -1.125rem, 0);
+	background-color: #4055b3;
+	color: white;
 }
 
 .btn-email-phone {
@@ -160,6 +175,14 @@ header {
 	font-weight: 300;
 	font-size: 14px;
 	min-width: 200px;
+	transition: all 500ms ease-in-out;
+}
+
+.btn-email-phone:hover {
+	/* transform: scaleY(1.2); */
+	transform: translate3d(0, -1.125rem, 0);
+	background-color: #4055b3;
+	color: white;
 }
 
 .lets-connect {
@@ -172,4 +195,76 @@ header {
 
 .footer p {
 	font-size: 14px;
+}
+
+.projects-desktop {
+	margin: 0 auto;
+	max-width: 1200px;
+}
+
+.v1-desktop-img {
+	display: none;
+}
+
+/* .v1-desktop:hover {
+	cursor: pointer;
+	transition: all 400ms ease-in-out;
+
+	.v1-desktop-img {
+		display: contents;
+		float: right;
+	}
+} */
+
+@media (min-width: 770px) {
+	header {
+		background-image: url(assets/bg-desktop.png);
+		height: auto;
+	}
+
+	.hero-img {
+		width: 370px;
+		height: auto;
+	}
+}
+
+@media (min-width: 991px) {
+	.hero-img {
+		width: 440px;
+		height: auto;
+	}
+
+	.about-bubble {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		text-align: center;
+		/* background-color: #c4cdf4; */
+		background-color: #1c1d20;
+		color: white;
+		border-radius: 50%;
+		width: 180px;
+		height: 180px;
+		padding: 0;
+		border: none;
+		transition: all 200ms ease-in-out;
+	}
+
+	.btn-contact {
+		height: 200px;
+		width: 200px;
+	}
+
+	.profile-pic img {
+		width: 80px;
+		height: 80px;
+	}
+
+	.lets-work-together {
+		font-size: 55px;
+	}
+
+	.btn-email-phone {
+		padding: 10px 15px;
+	}
 }
