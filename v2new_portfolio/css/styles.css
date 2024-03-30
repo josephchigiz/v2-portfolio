@@ -12,18 +12,13 @@ body {
 	font-style: normal;
 }
 
-header {
+/* header {
 	background-image: url(assets/bg-mobile.png);
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: cover;
 	/* height: 100vh; */
-}
-
-nav,
-.hero-desktop {
-	max-width: 1100px;
-}
+/* }  */
 
 .scroll-down {
 	color: #a5a5a5;
@@ -93,11 +88,11 @@ nav,
 }
 
 .p1-projects {
-	font-size: 20px;
+	font-size: 30px;
 	font-weight: 500;
 }
 .p2-projects {
-	font-size: 14px;
+	font-size: 16px;
 	font-weight: 300;
 }
 
@@ -161,18 +156,11 @@ nav,
 	transition: all 500ms ease-in-out;
 }
 
-.btn-contact a {
-	color: #242727;
-}
-
 .btn-contact:hover {
 	/* transform: scaleY(1.2); */
 	transform: translate3d(0, -1.125rem, 0);
 	background-color: #4055b3;
-
-	a {
-		color: white;
-	}
+	color: white;
 }
 
 .btn-email-phone {
@@ -227,10 +215,10 @@ nav,
 } */
 
 @media (min-width: 770px) {
-	header {
+	/* header {
 		background-image: url(assets/bg-desktop.png);
 		height: auto;
-	}
+	} */
 
 	.hero-img {
 		width: 370px;
