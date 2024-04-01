@@ -12,6 +12,14 @@ body {
 	font-style: normal;
 }
 
+/* .write-link {
+	transition: all 500ms ease-in-out;
+
+	:hover {
+		transform: translate3d(0, -1.125rem, 0) !important;
+	}
+} */
+
 /* header {
 	background-image: url(assets/bg-mobile.png);
 	background-position: center;
