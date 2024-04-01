@@ -46,12 +46,12 @@
 	<body>
 		<header>
 			<nav
-				class="container navbar navbar-expand-lg px-lg-5 pt-lg-4 px-3 pt-3 mx-lg-auto"
+				class="navbar navbar-expand-lg px-lg-5 pt-lg-4 px-3 pt-3 mx-lg-auto"
 			>
 				<div class="container-fluid">
 					<div class="logo-custom fs-5" href="index.html">
 						<a
-							class="link-underline link-underline-opacity-0 text-dark"
+							class="link-underline link-underline-opacity-0 logo-custom text-black"
 							href="index.html"
 							>@theJoernal</a
 						>
@@ -73,13 +73,18 @@
 						<!-- <a class="nav-link active" aria-current="page" href="#"
 							>Home</a
 						> -->
-						<a class="nav-link px-lg-3" href="about.html">About</a>
-						<a class="nav-link px-lg-3" href="work.html">Work</a>
+						<a
+							class="nav-link px-lg-3 active"
+							aria-current="page"
+							href="work.html"
+							>Work</a
+						>
 						<a
 							class="nav-link px-lg-3"
 							href="https://thejoernal.netlify.app"
 							>Thoughts</a
 						>
+						<a class="nav-link px-lg-3" href="about.html">About</a>
 						<a class="nav-link px-lg-3" href="contact.html"
 							>Contact</a
 						>
@@ -87,16 +92,27 @@
 				</div>
 			</nav>
 
+			<div
+				class="container d-none d-md-flex flex-column col-12 col mx-auto"
+			>
+				<div class="col-11 display-3 fw-medium mt-md-5 pt-5 mx-auto">
+					"Crafting unique designs <br />
+					and products..."
+				</div>
+				<hr class="header-hr col-11 mx-auto" />
+			</div>
+
+			<div class="d-md-none container flex-column col-12 mx-auto">
+				<div class="display-4 fw-medium mt-5 mb-4 col-11 mx-auto">
+					"Crafting unique designs and products..."
+				</div>
+			</div>
+
 			<section
 				id="work"
 				class="mb-5 projects row container mx-md-auto mt-md-5"
 			>
-				<!-- <div
-				class="col-md-12 display-6 text-decoration-underline mt-md-5 fw-ligh"
-			>
-				Work I've done:
-			</div> -->
-				<div class="container my-5 col-md-5">
+				<div class="container mt-5 mb-5 col-md-5 col-11">
 					<a href="https://josephchigiz.github.io"
 						><div
 							class="container-fluid text-center col col-12 mb-3"
@@ -119,7 +135,7 @@
 					</div>
 				</div>
 
-				<div class="container my-5 col-md-5">
+				<div class="container mt-5 mb-5 col-md-5 col-11">
 					<a href="https://mwl-resp-mkbhd.vercel.app/"
 						><div
 							class="container-fluid text-center col col-12 mb-3"
@@ -140,22 +156,64 @@
 					</div>
 				</div>
 
-				<div class="col-12 text-center d-none">
+				<div class="container mt-5 mb-5 col-md-5 col-11">
+					<a href="https://thikpad-counter.netlify.app/"
+						><div
+							class="container-fluid text-center col col-12 mb-3"
+						>
+							<img
+								class="col-12"
+								src="assets/new_think_counter.png"
+								alt=""
+							/></div
+					></a>
+					<p class="p1-projects col-11 mx-4 mb-1">Thinkpad Counter</p>
+					<hr class="col-11 mx-auto mt-1" />
+					<div class="row d-flex justify-content-evenly">
+						<p class="col col-8 fw-light p2-projects">
+							Fun Hobby Project
+						</p>
+						<span class="col col-2">2024</span>
+					</div>
+				</div>
+
+				<div class="container mt-5 mb-5 col-md-5 col-11">
+					<a href="https://thejoernal.netlify.app"
+						><div
+							class="container-fluid text-center col col-12 mb-3"
+						>
+							<img
+								class="col-12"
+								src="assets/new_blog.png"
+								alt=""
+							/></div
+					></a>
+					<p class="p1-projects col-11 mx-4 mb-1">theJoernal Blog</p>
+					<hr class="col-11 mx-auto mt-1" />
+					<div class="row d-flex justify-content-evenly">
+						<p class="col col-8 fw-light p2-projects">
+							Hugo Site Development
+						</p>
+						<span class="col col-2">2024</span>
+					</div>
+				</div>
+
+				<!-- <div class="col-12 text-center d-none">
 					<a href="work-page.html"
 						><button class="btn-more-custom">
 							More Work &rarr;
 						</button></a
 					>
-				</div>
+				</div> -->
 			</section>
 
-			<div class="col-12 text-center my-5 pb-5 d-none d-lg-block">
+			<!-- <div class="col-12 text-center my-5 pb-5 d-none d-lg-block">
 				<a href="work.html"
 					><button class="btn-more-custom">
 						More Work &rarr;
 					</button></a
 				>
-			</div>
+			</div> -->
 		</header>
 
 		<section id="contact" class="contact pt-5">
