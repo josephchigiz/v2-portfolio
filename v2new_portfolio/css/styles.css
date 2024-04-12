@@ -133,6 +133,32 @@ nav,
 	color: #414141;
 }
 
+.offcanvas .active {
+	display: inline-block;
+	position: relative;
+	transition: all 500ms ease-in-out;
+}
+
+.offcanvas .active::after {
+	content: "";
+	position: absolute;
+	width: 70%;
+	transform: scaleX(1);
+	height: 10px;
+	bottom: 20px;
+	left: 0px;
+	background-color: rgba(108, 131, 144, 0.423);
+	transform-origin: bottom right;
+	transition: transform 0.5s ease-out;
+}
+
+.offcanvas .active:hover::after {
+	transform: scaleX(0.6);
+	transform-origin: bottom left;
+	/* text-decoration: underline; */
+	/* transform: translate3d(0, -1.125rem, 0) !important; */
+}
+
 .shout {
 	font-weight: 600;
 	font-size: 50px;
