@@ -61,7 +61,7 @@
 		<!--* Navbar -->
 		<header class="pb-5">
 			<nav
-				class="navbar navbar-expand-lg px-md-5 pt-lg-4 px-3 pt-3 mx-lg-auto"
+				class="navbar navbar-expand-md px-md-5 pt-lg-4 px-3 pt-3 mx-lg-auto"
 			>
 				<div class="container-fluid">
 					<div class="logo-custom fs-5" href="index.html">
@@ -72,13 +72,23 @@
 							>@theJoernal</a
 						>
 					</div>
-					<button
+					<!-- <button
 						class="navbar-toggler border-0"
 						type="button"
 						data-bs-toggle="collapse"
 						data-bs-target="#navbarNavAltMarkup"
 						aria-controls="navbarNavAltMarkup"
 						aria-expanded="false"
+						aria-label="Toggle navigation"
+					>
+						<span class="ham-menu">.Menu</span>
+					</button> -->
+					<button
+						class="navbar-toggler border-0"
+						type="button"
+						data-bs-toggle="offcanvas"
+						data-bs-target="#offcanvasNavbar"
+						aria-controls="offcanvasNavbar"
 						aria-label="Toggle navigation"
 					>
 						<span class="ham-menu">.Menu</span>
@@ -102,8 +112,125 @@
 						<a class="nav-link px-lg-3" href="test.html">Test</a>
 					</div>
 				</div>
+				<!-- <button
+						class="navbar-toggler border-0"
+						type="button"
+						data-bs-toggle="offcanvas"
+						data-bs-target="#offcanvasNavbar"
+						aria-controls="offcanvasNavbar"
+						aria-label="Toggle navigation"
+					>
+						<span class="ham-menu">.Menu</span>
+					</button> -->
+				<div
+					class="offcanvas offcanvas-end d-md-none pt-3 vh-100"
+					tabindex="-1"
+					id="offcanvasNavbar"
+					aria-labelledby="offcanvasNavbarLabel"
+				>
+					<div class="offcanvas-header">
+						<button
+							type="button"
+							class="btn-close"
+							data-bs-dismiss="offcanvas"
+							aria-label="Close"
+						></button>
+					</div>
+					<div class="offcanvas-body">
+						<h6
+							style="font-size: 12px"
+							class="offcanvas-title"
+							id="offcanvasNavbarLabel"
+						>
+							NAVIGATION
+						</h6>
+						<hr class="header-hr" />
+						<ul
+							class="navbar-nav justify-content-end flex-grow-1 pe-3"
+						>
+							<li class="nav-item">
+								<a
+									class="nav-link active"
+									style="font-size: 40px; font-weight: 500 "
+									aria-current="page"
+									href="#"
+									>Home</a
+								>
+							</li>
+							<li class="nav-item">
+								<a
+									class="nav-link"
+									style="font-size: 40px; font-weight: 500 "
+									href="#"
+									>Work</a
+								>
+							</li>
+							<li class="nav-item">
+								<a
+									class="nav-link"
+									style="font-size: 40px; font-weight: 500 "
+									href="#"
+									>Blog</a
+								>
+							</li>
+							<li class="nav-item">
+								<a
+									class="nav-link"
+									style="font-size: 40px; font-weight: 500 "
+									href="#"
+									>About</a
+								>
+							</li>
+							<li class="nav-item">
+								<a
+									class="nav-link"
+									style="font-size: 40px; font-weight: 500 "
+									href="#"
+									>Contact</a
+								>
+							</li>
+						</ul>
+						<hr class="header-hr" />
+				<div class="col-12">
+					<ul
+						class="list-group list-group-horizontal list-unstyled col-12 justify-content-evenly"
+					>
+						<li class="pe-3 fs-1 fw-light">
+							<a
+								class="link-underline link-underline-opacity-0"
+								href="https://github.com/josephchigiz"
+							>
+								<i class="fa fa-github"></i>
+							</a>
+						</li>
+						<li class="pe-3 fs-1 fw-light">
+							<a
+								class="link-underline link-underline-opacity-0"
+								href="https://www.linkedin.com/in/joseph-ochego/"
+							>
+								<i class="fa fa-linkedin"></i
+							></a>
+						</li>
+						<li class="pe-3 fs-1 fw-light">
+							<a
+								class="link-underline link-underline-opacity-0"
+								href="https://twitter.com/i_am_ochego"
+							>
+								<i class="fa fa-twitter"> </i
+							></a>
+						</li>
+						<li class="pe-3 fs-1 fw-light">
+							<a
+								class="link-underline link-underline-opacity-0"
+								href="https://www.instagram.com/joe__graphic/"
+							>
+								<i class="fa fa-instagram"></i>
+							</a>
+						</li>
+					</ul>
+				</div>
+				</div>
 			</nav>
-
 			<div class="container">
 				<div
 					class="hero-desktop row container-fluid px-4 pt-4 pt-lg-0 justify-content-lg-center align-items-lg-center mt-lg-4 mb-lg-5 mx-lg-auto"
