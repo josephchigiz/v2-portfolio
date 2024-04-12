@@ -25,25 +25,8 @@
 			href="https://fonts.googleapis.com/css2?family=Handlee&display=swap"
 			rel="stylesheet"
 		/>
-
-		<style>
-			header {
-				background-image: url(assets/bg2-mobile.png);
-				background-position: center;
-				background-repeat: no-repeat;
-				background-size: cover;
-				/* height: 100vh; */
-			}
-
-			@media (min-width: 770px) {
-				header {
-					background-image: url(assets/bg2-desktop.png);
-					height: auto;
-				}
-			}
-		</style>
 	</head>
-	<body>
+	<body style="background-color: #1c1d20">
 		<header>
 			<nav
 				class="navbar navbar-expand-lg px-lg-5 pt-lg-4 px-3 pt-3 mx-lg-auto"
@@ -51,7 +34,7 @@
 				<div class="container-fluid">
 					<div class="logo-custom fs-5" href="index.html">
 						<a
-							class="link-underline link-underline-opacity-0 text-black logo-custom"
+							class="link-underline link-underline-opacity-0 text-light logo-custom"
 							href="index.html"
 							>@theJoernal</a
 						>
@@ -65,7 +48,7 @@
 						aria-expanded="false"
 						aria-label="Toggle navigation"
 					>
-						<span class="ham-menu">.Menu</span>
+						<span class="ham-menu text-light">.Menu</span>
 					</button>
 				</div>
 				<div class="collapse navbar-collapse" id="navbarNavAltMarkup">
@@ -73,15 +56,19 @@
 						<!-- <a class="nav-link active" aria-current="page" href="#"
 							>Home</a
 						> -->
-						<a class="nav-link px-lg-3" href="work.html">Work</a>
+						<a class="nav-link px-lg-3 text-light" href="work.html"
+							>Work</a
+						>
 						<a
-							class="nav-link px-lg-3"
+							class="nav-link px-lg-3 text-light"
 							href="https://thejoernal.netlify.app"
 							>Thoughts</a
 						>
-						<a class="nav-link px-lg-3" href="about.html">About</a>
+						<a class="nav-link px-lg-3 text-light" href="about.html"
+							>About</a
+						>
 						<a
-							class="nav-link px-lg-3 active"
+							class="nav-link px-lg-3 active text-light"
 							aria-current="page"
 							href="contact.html"
 							>Contact</a
@@ -92,28 +79,85 @@
 		</header>
 
 		<section id="contact" class="contact pt-5">
-			<div class="container mt-5">
-				<div class="profile-pic mt-4">
-					<img
-						src="assets/contact-image.png"
-						alt=""
-						class="offset-1"
-					/>
-					<p class="p-br mb-0 lets-work-together">Let's Work</p>
+			<div class="container">
+				<div class="mt-5">
+					<div class="profile-pic mt-4">
+						<img src="assets/contact-image.png" alt="" class="" />
+						<p class="p-br mb-0 lets-work-together">Let's Work</p>
+					</div>
+					<p class="p-br ps-2 lets-work-together">Together</p>
+					<hr class="mb-0" />
 				</div>
-				<p class="p-br offset-1 lets-work-together">Together</p>
+				<div>
+					<form action="" class="mb-5 pb-4">
+						<label
+							class="ms-3 mt-5 form-label text-white"
+							for="name"
+							>What's your name?</label
+						>
+						<input
+							class="ms-3 mt-2 mb-5 border-0 bg-transparent text-light"
+							type="text"
+							name="name"
+							value=""
+							placeholder="John Doe *"
+						/>
 
-				<hr class="col-11 mx-auto my-0 py-0" />
-				<a
-					href="contact.html"
-					class="link-underline link-underline-opacity-0"
-					><button
-						class="rounded-circle offset-7 btn-contact fw-medium"
+						<hr class="my-0" />
+						<label
+							class="ms-3 mt-5 form-label text-white"
+							for="name"
+							>What's your email?</label
+						>
+						<input
+							class="ms-3 mb-5 mt-2 border-0 bg-transparent text-light"
+							type="text"
+							name="name"
+							value=""
+							placeholder="example@email.com *"
+						/>
+
+						<hr class="my-0" />
+						<label
+							class="ms-3 mt-5 form-label text-white"
+							for="name"
+							>What services are you looking for?</label
+						>
+						<input
+							class="ms-3 mt-2 mb-5 border-0 bg-transparent text-light"
+							type="text"
+							name="name"
+							value=""
+							placeholder="web development, web design... *"
+						/>
+
+						<hr class="my-0" />
+						<label
+							class="ms-3 mt-5 form-label text-white"
+							for="message"
+							>Your Message</label
+						>
+						<textarea
+							class="ps-0 mt-2 form-control ms-3 mb-5 border-0 bg-transparent text-light textarea"
+							name="message"
+							rows="1"
+							id=""
+							placeholder="Hello Joe, I'd like us to work on..."
+						></textarea>
+					</form>
+				</div>
+				<div class="">
+					<hr class="d-none d-md-flex col-12 mx-auto my-0 py-0" />
+					<a
+						href="contact.html"
+						class="link-underline link-underline-opacity-0 opacity-100"
+						><button
+							class="rounded-circle offset-md-7 offset-6 btn-contact-last fw-medium"
+						>
+							Send it
+						</button></a
 					>
-						Contact <br />
-						me
-					</button></a
-				>
+				</div>
 			</div>
 
 			<div class="container">

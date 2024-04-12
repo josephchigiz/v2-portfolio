@@ -1,0 +1,94 @@
+<nav
+				class="navbar navbar-expand-lg px-md-5 pt-lg-4 px-3 pt-3 mx-lg-auto"
+			>
+				<div class="container-fluid">
+					<div class="logo-custom fs-5" href="index.html">
+						<a
+							class="link-underline link-underline-opacity-0 logo-custom text-black"
+							data-wow-duration="5s"
+							href="index.html"
+							>@theJoernal</a
+						>
+					</div>
+					<button
+						class="navbar-toggler border-0"
+						type="button"
+						data-bs-toggle="offcanvas"
+						data-bs-target="#offcanvasNavbar"
+						aria-controls="offcanvasNavbar"
+						aria-label="Toggle navigation"
+					>
+						<span class="ham-menu">.Menu</span>
+					</button>
+					<div
+						class="offcanvas offcanvas-end"
+						tabindex="-1"
+						id="offcanvasNavbar"
+						aria-labelledby="offcanvasNavbarLabel"
+					>
+						<div class="offcanvas-header mt-3 mb-0 pb-0">
+							<button
+								type="button"
+								class="btn-close"
+								data-bs-dismiss="offcanvas"
+								aria-label="Close"
+							></button>
+						</div>
+						<div class="offcanvas-body">
+							<h6
+								style="font-size: 12px"
+								class="offcanvas-title mt-3"
+								id="offcanvasNavbarLabel"
+							>
+								NAVIGATION
+							</h6>
+							<hr class="header-hr" />
+							<ul
+								class="navbar-nav justify-content-end flex-grow-1 pe-3"
+							>
+								<li class="nav-item">
+									<a
+										class="nav-link active"
+										style="font-size: 50px"
+										aria-current="page"
+										href="#"
+										>Home</a
+									>
+								</li>
+								<li class="nav-item">
+									<a
+										class="nav-link"
+										style="font-size: 50px"
+										href="#"
+										>Work</a
+									>
+								</li>
+								<li class="nav-item">
+									<a
+										class="nav-link"
+										style="font-size: 50px"
+										href="#"
+										>Blog</a
+									>
+								</li>
+								<li class="nav-item">
+									<a
+										class="nav-link"
+										style="font-size: 50px"
+										href="#"
+										>About</a
+									>
+								</li>
+								<li class="nav-item">
+									<a
+										class="nav-link"
+										style="font-size: 50px"
+										href="#"
+										>Contact</a
+									>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</nav>
