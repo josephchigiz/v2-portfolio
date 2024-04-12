@@ -25,16 +25,20 @@
 			href="https://fonts.googleapis.com/css2?family=Handlee&display=swap"
 			rel="stylesheet"
 		/>
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+		/>
 	</head>
 	<body style="background-color: #1c1d20">
 		<header>
 			<nav
-				class="navbar navbar-expand-lg px-lg-5 pt-lg-4 px-3 pt-3 mx-lg-auto"
+				class="navbar navbar-expand-md px-md-5 pt-lg-4 px-3 pt-3 mx-lg-auto"
 			>
 				<div class="container-fluid">
 					<div class="logo-custom fs-5" href="index.html">
 						<a
-							class="link-underline link-underline-opacity-0 text-light logo-custom"
+							class="link-underline link-underline-opacity-0 logo-custom text-black"
 							href="index.html"
 							>@theJoernal</a
 						>
@@ -42,13 +46,12 @@
 					<button
 						class="navbar-toggler border-0"
 						type="button"
-						data-bs-toggle="collapse"
-						data-bs-target="#navbarNavAltMarkup"
-						aria-controls="navbarNavAltMarkup"
-						aria-expanded="false"
+						data-bs-toggle="offcanvas"
+						data-bs-target="#offcanvasNavbar"
+						aria-controls="offcanvasNavbar"
 						aria-label="Toggle navigation"
 					>
-						<span class="ham-menu text-light">.Menu</span>
+						<span class="ham-menu">.Menu</span>
 					</button>
 				</div>
 				<div class="collapse navbar-collapse" id="navbarNavAltMarkup">
@@ -56,24 +59,133 @@
 						<!-- <a class="nav-link active" aria-current="page" href="#"
 							>Home</a
 						> -->
-						<a class="nav-link px-lg-3 text-light" href="work.html"
-							>Work</a
-						>
+						<a class="nav-link px-lg-3" href="work.html">Work</a>
 						<a
-							class="nav-link px-lg-3 text-light"
+							class="nav-link px-lg-3"
 							href="https://thejoernal.netlify.app"
-							>Thoughts</a
+							>Blog</a
 						>
-						<a class="nav-link px-lg-3 text-light" href="about.html"
-							>About</a
-						>
-						<a
-							class="nav-link px-lg-3 active text-light"
-							aria-current="page"
-							href="contact.html"
+						<a class="nav-link px-lg-3" href="about.html">About</a>
+						<a class="nav-link px-lg-3" href="contact.html"
 							>Contact</a
 						>
 					</div>
+				</div>
+				<div
+					class="offcanvas offcanvas-end d-md-none pt-3 vh-100"
+					tabindex="-1"
+					id="offcanvasNavbar"
+					aria-labelledby="offcanvasNavbarLabel"
+				>
+					<div class="offcanvas-header">
+						<button
+							type="button"
+							class="btn-close"
+							data-bs-dismiss="offcanvas"
+							aria-label="Close"
+						></button>
+					</div>
+					<div class="offcanvas-body">
+						<h6
+							style="font-size: 12px;  color: #575555;"
+							class="offcanvas-title"
+							id="offcanvasNavbarLabel"
+						>
+							NAVIGATION
+						</h6>
+						<hr class="header-hr" />
+						<ul
+							class="navbar-nav justify-content-end flex-grow-1 pe-3"
+						>
+							<li class="nav-item">
+								<a
+									class="nav-link "
+									style="font-size: 40px; font-weight: 500 "
+									aria-current="page"
+									href="index.html"
+									>Home</a
+								>
+							</li>
+							<li class="nav-item">
+								<a
+									class="nav-link "
+									style="font-size: 40px; font-weight: 500 "
+									href="work.html"
+									>Work</a
+								>
+							</li>
+							<li class="nav-item">
+								<a
+									class="nav-link "
+									style="font-size: 40px; font-weight: 500 "
+									href="https://theJoernal.netlify.app"
+									>Blog</a
+								>
+							</li>
+							<li class="nav-item">
+								<a
+									class="nav-link "
+									style="font-size: 40px; font-weight: 500 "
+									href="about.html"
+									>About</a
+								>
+							</li>
+							<li class="nav-item">
+								<a
+									class="nav-link active"
+									style="font-size: 40px; font-weight: 500 "
+									href="contact.html"
+									>Contact</a
+								>
+							</li>
+						</ul>
+						<hr class="header-hr mb-4" />
+						<h6
+							style="font-size: 12px; color: #575555;"
+							class="offcanvas-title mt-1 mb-3"
+							/*id="offcanvasNavbarLabel"*/
+						>
+							LET'S CONNECT:
+						</h6>
+				<div class=" ">
+					
+					<ul
+						class="list-group list-group-horizontal list-unstyled col-12 "
+					>
+						<li class="col-2 fs-1 fw-light">
+							<a
+								class="link-underline link-underline-opacity-0"
+								href="https://github.com/josephchigiz"
+							>
+								<i class="fa fa-github"></i>
+							</a>
+						</li>
+						<li class="col-2 fs-1 fw-light">
+							<a
+								class="link-underline link-underline-opacity-0"
+								href="https://www.linkedin.com/in/joseph-ochego/"
+							>
+								<i class="fa fa-linkedin"></i
+							></a>
+						</li>
+						<li class="col-2 fs-1 fw-light">
+							<a
+								class="link-underline link-underline-opacity-0"
+								href="https://twitter.com/i_am_ochego"
+							>
+								<i class="fa fa-twitter"> </i
+							></a>
+						</li>
+						<li class="col-2 fs-1 fw-light">
+							<a
+								class="link-underline link-underline-opacity-0"
+								href="https://www.instagram.com/joe__graphic/"
+							>
+								<i class="fa fa-instagram"></i>
+							</a>
+						</li>
+					</ul>
+				</div>
 				</div>
 			</nav>
 		</header>

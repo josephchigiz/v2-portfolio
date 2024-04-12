@@ -25,6 +25,10 @@
 			href="https://fonts.googleapis.com/css2?family=Handlee&display=swap"
 			rel="stylesheet"
 		/>
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+		/>
 
 		<style>
 			header {
@@ -46,12 +50,12 @@
 	<body>
 		<header>
 			<nav
-				class="navbar navbar-expand-lg px-lg-5 pt-lg-4 px-3 pt-3 mx-lg-auto"
+				class="navbar navbar-expand-md px-md-5 pt-lg-4 px-3 pt-3 mx-lg-auto"
 			>
 				<div class="container-fluid">
 					<div class="logo-custom fs-5" href="index.html">
 						<a
-							class="link-underline link-underline-opacity-0 logo-custom text-dark"
+							class="link-underline link-underline-opacity-0 logo-custom text-black"
 							href="index.html"
 							>@theJoernal</a
 						>
@@ -59,10 +63,9 @@
 					<button
 						class="navbar-toggler border-0"
 						type="button"
-						data-bs-toggle="collapse"
-						data-bs-target="#navbarNavAltMarkup"
-						aria-controls="navbarNavAltMarkup"
-						aria-expanded="false"
+						data-bs-toggle="offcanvas"
+						data-bs-target="#offcanvasNavbar"
+						aria-controls="offcanvasNavbar"
 						aria-label="Toggle navigation"
 					>
 						<span class="ham-menu">.Menu</span>
@@ -77,18 +80,129 @@
 						<a
 							class="nav-link px-lg-3"
 							href="https://thejoernal.netlify.app"
-							>Thoughts</a
+							>Blog</a
 						>
-						<a
-							class="nav-link px-lg-3 active"
-							aria-current="page"
-							href="about.html"
-							>About</a
-						>
+						<a class="nav-link px-lg-3" href="about.html">About</a>
 						<a class="nav-link px-lg-3" href="contact.html"
 							>Contact</a
 						>
 					</div>
+				</div>
+				<div
+					class="offcanvas offcanvas-end d-md-none pt-3 vh-100"
+					tabindex="-1"
+					id="offcanvasNavbar"
+					aria-labelledby="offcanvasNavbarLabel"
+				>
+					<div class="offcanvas-header">
+						<button
+							type="button"
+							class="btn-close"
+							data-bs-dismiss="offcanvas"
+							aria-label="Close"
+						></button>
+					</div>
+					<div class="offcanvas-body">
+						<h6
+							style="font-size: 12px;  color: #575555;"
+							class="offcanvas-title"
+							id="offcanvasNavbarLabel"
+						>
+							NAVIGATION
+						</h6>
+						<hr class="header-hr" />
+						<ul
+							class="navbar-nav justify-content-end flex-grow-1 pe-3"
+						>
+							<li class="nav-item">
+								<a
+									class="nav-link "
+									style="font-size: 40px; font-weight: 500 "
+									aria-current="page"
+									href="index.html"
+									>Home</a
+								>
+							</li>
+							<li class="nav-item">
+								<a
+									class="nav-link "
+									style="font-size: 40px; font-weight: 500 "
+									href="work.html"
+									>Work</a
+								>
+							</li>
+							<li class="nav-item">
+								<a
+									class="nav-link "
+									style="font-size: 40px; font-weight: 500 "
+									href="https://theJoernal.netlify.app"
+									>Blog</a
+								>
+							</li>
+							<li class="nav-item">
+								<a
+									class="nav-link active"
+									style="font-size: 40px; font-weight: 500 "
+									href="about.html"
+									>About</a
+								>
+							</li>
+							<li class="nav-item">
+								<a
+									class="nav-link"
+									style="font-size: 40px; font-weight: 500 "
+									href="contact.html"
+									>Contact</a
+								>
+							</li>
+						</ul>
+						<hr class="header-hr mb-4" />
+						<h6
+							style="font-size: 12px; color: #575555;"
+							class="offcanvas-title mt-1 mb-3"
+							/*id="offcanvasNavbarLabel"*/
+						>
+							LET'S CONNECT:
+						</h6>
+				<div class=" ">
+					
+					<ul
+						class="list-group list-group-horizontal list-unstyled col-12 "
+					>
+						<li class="col-2 fs-1 fw-light">
+							<a
+								class="link-underline link-underline-opacity-0"
+								href="https://github.com/josephchigiz"
+							>
+								<i class="fa fa-github"></i>
+							</a>
+						</li>
+						<li class="col-2 fs-1 fw-light">
+							<a
+								class="link-underline link-underline-opacity-0"
+								href="https://www.linkedin.com/in/joseph-ochego/"
+							>
+								<i class="fa fa-linkedin"></i
+							></a>
+						</li>
+						<li class="col-2 fs-1 fw-light">
+							<a
+								class="link-underline link-underline-opacity-0"
+								href="https://twitter.com/i_am_ochego"
+							>
+								<i class="fa fa-twitter"> </i
+							></a>
+						</li>
+						<li class="col-2 fs-1 fw-light">
+							<a
+								class="link-underline link-underline-opacity-0"
+								href="https://www.instagram.com/joe__graphic/"
+							>
+								<i class="fa fa-instagram"></i>
+							</a>
+						</li>
+					</ul>
+				</div>
 				</div>
 			</nav>
 
@@ -177,54 +291,80 @@
 			</section>
 		</header>
 
-		<section id="contact" class="contact pt-5">
+		<section id="contact" class="contact pt-2 pt-lg-5 mt-5 col-12 mx-auto">
 			<div class="container mt-5">
-				<div class="profile-pic mt-4">
-					<img
-						src="assets/contact-image.png"
-						alt=""
-						class="offset-1"
-					/>
-					<p class="p-br mb-0 lets-work-together">Let's Work</p>
-				</div>
-				<p class="p-br offset-1 lets-work-together">Together</p>
-
-				<hr class="col-11 mx-auto my-0 py-0" />
-				<a
-					href="contact.html"
-					class="link-underline link-underline-opacity-0"
-					><button
-						class="rounded-circle offset-7 btn-contact fw-medium"
-					>
-						Contact <br />
-						me
-					</button></a
+				<div
+					class="profile-pic mt-4 align-items-center pb-3 col-11 mx-auto d-none d-lg-flex"
 				>
+					<img src="assets/contact-image.png" alt="" class="" />
+					<p class="p-br mb-0 lets-work-together">
+						Let's Work Together
+					</p>
+				</div>
+				<!-- <p class="p-br pb-2 offset-1 lets-work-together">Together</p> -->
+				<div class="container d-lg-none">
+					<div class="profile-pic mt-4 align-items-center pb-3 col-11 mx-auto">
+					  <img src="assets/contact-image.png" alt="" class="" />
+					  <p class="p-br mb-0 lets-work-together">
+						  Let's Work
+					  </p>
+				  </div>
+				  <p class="p-br pb-2 offset-1 lets-work-together">Together</p>
+				</div>
+
+				<div class="container col-11 d-block mx-auto contact-div mx-md-auto">
+					<hr class="col-11 col-lg-12 mx-auto my-lg-0 py-lg-0" style="background-color: white; height: 2px; " />
+					<a
+						href="contact.html"
+						class="link-underline link-underline-opacity-0"
+						><button
+							class="rounded-circle offset-7 offset-md-7 offset-lg-8 fw-medium btn-contact wow animate__animated animate__fadeInLeft"
+							data-wow-duration="2s"
+						>
+							Contact <br />
+							me
+						</button></a
+					>
+				</div>
 			</div>
 
-			<div class="container">
-				<div class="col-12 py-5 row">
+			<div class="container row col-11 mx-auto mb-md-5 pb-md-4 pt-4 pt-lg-0">
+				<!-- <div class="col-12 pb-3 row mail-n-phone">
 					<a
-						class="d-block col-10 mx-auto my-4 my-md-1 pe-md-0 col-md-3 me-md-3 ms-md-5 link-underline link-underline-opacity-0 text-white"
+						class="d-block col-10 mx-auto pe-md-0 col-md-4 me-md-3 ms-md-5 link-underline link-underline-opacity-0 text-white"
 						href="mailto:ochegoatwork@gmail.com"
-						><button class="btn-email-phone col-12 py-3">
+						><button class="btn-email-phone col-12">
 							ochegoatwork@gmail.com
 						</button></a
 					>
 					<a
-						class="d-block col-10 mx-auto my-md-1 col-md-3 ps-md-0 ms-md-0 link-underline link-underline-opacity-0 text-white"
+						class="d-block col-10 mx-auto col-md-3 ps-md-0 ms-md-0 link-underline link-underline-opacity-0 text-white"
 						href="tel:+9173302851"
-						><button class="btn-email-phone col-12 py-3">
+						><button class="btn-email-phone col-12">
 							+91 733-770-2851
 						</button></a
 					>
-				</div>
+				</div> -->
+				<a
+					class="d-block pb-4 pb-lg-0 col-10 mx-auto pe-md-0 col-md-4 me-md-3 ms-md-5 link-underline link-underline-opacity-0 text-white"
+					href="mailto:ochegoatwork@gmail.com"
+					><button class="btn-email-phone col-12">
+						ochegoatwork@gmail.com
+					</button></a
+				>
+				<a
+					class="d-block pb-4 pb-lg-0 col-10 mx-auto col-md-3 ps-md-0 ms-md-0 link-underline link-underline-opacity-0 text-white"
+					href="tel:+9173302851"
+					><button class="btn-email-phone col-12">
+						+91 733-770-2851
+					</button></a
+				>
 			</div>
 
 			<div
-				class="container row align-items-lg-end mb-lg-0 pb-lg-5 justify-content-lg-between mx-auto"
+				class="container footer-foot row align-items-lg-end mb-lg-0 pb-lg-5 mt-md-5 justify-content-lg-between mx-auto"
 			>
-				<div class="mb-lg-0 col-12 pt-5 pb-4 col-lg-6 pb-lg-0">
+				<div class="mb-lg-0 col-12 mt-3 mt-lg-0 pt-5 pb-2 col-lg-6 pb-lg-0">
 					<p
 						class="mb-lg-0 offset-1 text-decoration-underline lets-connect mb-2"
 					>
@@ -233,56 +373,67 @@
 					<ul
 						class="list-group list-group-horizontal list-unstyled offset-1 text-white mb-lg-0"
 					>
-						<li class="pe-3 fw-light">
+						<li class="pe-3 fs-5 py-1 px-1 fw-light">
 							<a
 								class="link-underline link-underline-opacity-0 text-white"
 								href="https://github.com/josephchigiz"
-								>Github</a
 							>
+								<i class="fa fa-github"></i>
+							</a>
 						</li>
-						<li class="pe-3 fw-light">
+						<li class="pe-3 fs-5 py-1 px-1 fw-light">
 							<a
 								class="link-underline link-underline-opacity-0 text-white"
 								href="https://www.linkedin.com/in/joseph-ochego/"
-								>LinkedIn</a
 							>
+								<i class="fa fa-linkedin"></i
+							></a>
 						</li>
-						<li class="pe-3 fw-light">
+						<li class="pe-3 fs-5 py-1 px-1 fw-light">
 							<a
 								class="link-underline link-underline-opacity-0 text-white"
 								href="https://twitter.com/i_am_ochego"
-								>Twitter</a
 							>
+								<i class="fa fa-twitter"> </i
+							></a>
 						</li>
-						<li class="pe-3 fw-light">
+						<li class="pe-3 fs-5 py-1 px-1 fw-light">
 							<a
 								class="link-underline link-underline-opacity-0 text-white"
 								href="https://www.instagram.com/joe__graphic/"
-								>Instagram</a
 							>
+								<i class="fa fa-instagram"></i>
+							</a>
 						</li>
 					</ul>
 				</div>
 
-				<hr class="col-11 mx-auto my-0 py-0 d-lg-none" />
+				<hr class="col-11 mx-auto my-0 py-0 d-lg-none" style="background-color: white; height: 2px; " />
 
-				<div class="row footer pt-4 col-lg-5 mb-lg-0">
+				<div class="row footer pt-4 col-lg-5 mb-lg-0 pb-md-2">
 					<p class="col col-7 text-white offset-1 mb-lg-0">
-						&copy; 2024 V2 OCHEGO
+						&copy; 2024 OCHEGO SITE
 					</p>
 					<a
 						href="#"
 						class="mb-lg-0 col col-4 link-underline link-underline-opacity-0 fw-bold"
-						><p class="text-info fs-6 ps-5 mb-lg-0">&uarr; up</p></a
+						><p class="text-info fs-6 ps-5 mb-lg-0 up">
+							&uarr; up
+						</p></a
 					>
 				</div>
 			</div>
 		</section>
 		<script src="scripts/app.js"></script>
+
 		<script
 			src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
 			integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
 			crossorigin="anonymous"
 		></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+		<script>
+			new WOW().init();
+		</script>
 	</body>
 </html>
