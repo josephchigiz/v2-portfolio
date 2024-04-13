@@ -59,14 +59,14 @@
 						<!-- <a class="nav-link active" aria-current="page" href="#"
 							>Home</a
 						> -->
-						<a class="nav-link px-lg-3" href="work.html">Work</a>
+						<a class="nav-link px-lg-3 text-light" href="work.html">Work</a>
 						<a
-							class="nav-link px-lg-3"
+							class="nav-link px-lg-3 text-light "
 							href="https://thejoernal.netlify.app"
 							>Blog</a
 						>
-						<a class="nav-link px-lg-3" href="about.html">About</a>
-						<a class="nav-link px-lg-3" href="contact.html"
+						<a class="nav-link px-lg-3 text-light" href="about.html">About</a>
+						<a class="nav-link px-lg-3 text-white active" href="contact.html"
 							>Contact</a
 						>
 					</div>
@@ -140,14 +140,8 @@
 							</li>
 						</ul>
 						<hr class="header-hr mb-4" />
-						<h6
-							style="font-size: 12px; color: #575555;"
-							class="offcanvas-title mt-1 mb-3"
-							/*id="offcanvasNavbarLabel"*/
-						>
-							LET'S CONNECT:
-						</h6>
-				<div class=" ">
+						<h6 style="font-size: 12px; color: #575555;" class="offcanvas-title mt-1 mb-3" > LET'S CONNECT: </h6>
+				<div>
 					
 					<ul
 						class="list-group list-group-horizontal list-unstyled col-12 "
@@ -190,69 +184,84 @@
 			</nav>
 		</header>
 
-		<section id="contact" class="contact pt-5">
+		<section id="contact" class=" pt-5">
 			<div class="container">
-				<div class="mt-5 col-11 mx-auto">
+				<div class="mt-5 col-11 mx-auto d-md-none">
 					<div class="profile-pic mt-4 align-items-end">
 						<img src="assets/profile.png" alt="" class="" style="width: 40px; height: auto;"/>
 						<p class="p-br2 mb-0 lets-work-together">"Let's Work</p>
 					</div>
 					<p class="p-br2 ps-2 lets-work-together">Together..."</p>
 				</div>
+
+				<div class="mt-5 col-11 col-md-12 mx-auto d-none d-md-flex">
+					<div class="profile-pic mt-4">
+						<!-- <img src="assets/profile.png" alt="" class="" style="width: 40px; height: auto;"/> -->
+						<p class="display-2 text-light mb-0 mb-lg-5 pb-md-5 lets-work-together">"Let's Work Together..."</p>
+					</div>
+				</div>
 				
-        <div class="container row">
-          <div class="col-11 mx-auto my-5">
+        <div class="container row mx-auto">
+          <div class="col-11 col-lg-4 mx-auto my-5 my-lg-0 order-lg-last">
 						<div class="col-md-12 ms-lg-5 fw-medium mb-2 col-6 ps-lg-0" style="font-size: 12px; color: #575555;">CONTACT DETAILS:</div>
-						<div>
-							<div class="mb-1"><a class=" text-light col-7 link-underline link-underline-opacity-0" href="mailto:ochegoatwork@gmail.com" style="font-size: 15px;">ochegoatwork@gmail.com</a></div>
-							<div class="mb-1"><a class=" text-light col-7 link-underline link-underline-opacity-0" href="tel:+917337702851" style="font-size: 15px;">+917337702851</a></div>
+						<div class="col-lg-12">
+							<div class="mb-1  col-7 col-lg-6 ms-lg-5"><a class=" text-light  link-underline link-underline-opacity-0" href="mailto:ochegoatwork@gmail.com" style="font-size: 15px;">ochegoatwork@gmail.com</a></div>
+							<div class="mb-1  col-7 col-lg-6 ms-lg-5"><a class=" text-light  link-underline link-underline-opacity-0" href="tel:+917337702851" style="font-size: 15px;">+917337702851</a></div>
+						</div>
+
+						<div class="d-none d-lg-block col-md-12 ms-lg-5 fw-medium mb-2 mt-4 col-6 ps-lg-0" style="font-size: 12px; color: #575555;">LET'S CONNECT:</div>
+						<div class="col-lg-12 d-none d-lg-flex flex-column">
+							<div class="mb-1  col-7 col-lg-6 ms-lg-5"><a class=" text-light  link-underline link-underline-opacity-0" href="mailto:ochegoatwork@gmail.com" style="font-size: 15px;"> <i class="fa fa-github"></i> Github</a></div>
+							<div class="mb-1  col-7 col-lg-6 ms-lg-5"><a class=" text-light  link-underline link-underline-opacity-0" href="mailto:ochegoatwork@gmail.com" style="font-size: 15px;"> <i class="fa fa-linkedin"></i> LinkedIn</a></div>
+							<div class="mb-1  col-7 col-lg-6 ms-lg-5"><a class=" text-light  link-underline link-underline-opacity-0" href="mailto:ochegoatwork@gmail.com" style="font-size: 15px;"> <i class="fa fa-twitter"></i> Twitter</a></div>
+							<div class="mb-1  col-7 col-lg-6 ms-lg-5"><a class=" text-light  link-underline link-underline-opacity-0" href="mailto:ochegoatwork@gmail.com" style="font-size: 15px;"> <i class="fa fa-instagram"></i> Instagram</a></div>
 						</div>
 					</div>
-					<div class="col-11 mx-auto">
-						<form action="" class="mb-3 ">
-					<hr class="mb-0 contact-hr" />
+					<div class="col-11 col-lg-8 mx-auto order-lg-first">
+						<form action="" class="mb-3 col col-11">
+					    <hr class="mb-0" style="height: 1px; background-color: white; border: none;" />
 							<label
-								class="ms-3 mt-5 form-label text-white"
+								class="d-block ms-3 mt-5 form-label text-white"
 								for="name"
 								> <span class="" style="color: #575555;">1.</span> What's your name?</label
 							>
 							<input
-								class="ms-3 mt-2 mb-5 border-0 bg-transparent text-light"
+								class="d-block ms-3 mt-2 mb-5 border-0 bg-transparent text-light"
 								type="text"
 								name="name"
 								value=""
 								placeholder="John Doe *"
 							/>
 	
-							<hr class="my-0 contact-hr" />
+							<hr class="my-0 " style="height: 1px; background-color: white; border: none;"/>
 							<label
-								class="ms-3 mt-5 form-label text-white"
+								class="d-block ms-3 mt-5 form-label text-white"
 								for="name"
 								><span class="" style="color: #575555;">2.</span>What's your email?</label
 							>
 							<input
-								class="ms-3 mb-5 mt-2 border-0 bg-transparent text-light"
+								class="d-block ms-3 mb-5 mt-2 border-0 bg-transparent text-light"
 								type="text"
 								name="name"
 								value=""
 								placeholder="example@email.com *"
 							/>
 	
-							<hr class="my-0 contact-hr" />
+							<hr class="my-0" style="height: 1px; background-color: white; border: none;"/>
 							<label
-								class="ms-3 mt-5 form-label text-white"
+								class="d-block ms-3 mt-5 form-label text-white"
 								for="name"
 								><span class="" style="color: #575555;">3.</span>What services are you looking for?</label
 							>
 							<input
-								class="ms-3 mt-2 mb-5 border-0 bg-transparent text-light"
+								class="d-block ms-3 mt-2 mb-5 border-0 bg-transparent text-light"
 								type="text"
 								name="name"
 								value=""
 								placeholder="web development, web design... *"
 							/>
 	
-							<hr class="my-0 contact-hr" />
+							<hr class="my-0" style="height: 1px; background-color: white; border: none;"/>
 							<label
 								class="ms-3 mt-5 form-label text-white"
 								for="message"
@@ -269,8 +278,8 @@
 					</div>
 				</div>
 
-				<div class="container col-11 d-block mx-auto contact-div mx-md-auto">
-					<hr class="col-11 col-lg-12 mx-auto my-lg-0 py-lg-0" style="background-color: white; height: 5px; " />
+				<div class="container col-11 d-block mx-auto contact-div mx-md-auto my-5 pb-5 text-white">
+					<hr class="col-11 col-lg-12 mx-auto my-lg-0 py-lg-0" style="background-color: white; border: none; height: 5px; " />
 					<a
 						href="contact.html"
 						class="link-underline link-underline-opacity-0"
@@ -284,7 +293,7 @@
 				</div>
 			</div>
 
-			<div class="container">
+			<div class="container mb-lg-5 mb-5 mt-5">
 				<div class="col-12 py-5 row d-none">
 					<a
 						class="d-block col-10 mx-auto my-4 my-md-1 pe-md-0 col-md-3 me-md-3 ms-md-5 link-underline link-underline-opacity-0 text-white"
@@ -304,9 +313,9 @@
 			</div>
 
 			<div
-				class="container row align-items-lg-end mb-lg-0 pb-lg-5 justify-content-lg-between mx-auto"
+				class="container row mb-lg-0 pb-lg-5 justify-content-lg-between mx-auto mt-5"
 			>
-				<div class="mb-lg-0 col-12 pt-5 pb-4 col-lg-6 pb-lg-0">
+				<div class="mb-lg-0 col-12 pt-5 pb-4 col-lg-6 pb-lg-0 d-lg-none">
 					<p
 						class="mb-lg-0 offset-1 text-decoration-underline lets-connect mb-2"
 					>
@@ -346,15 +355,15 @@
 					</ul>
 				</div>
 
-				<hr class="col-11 mx-auto my-0 py-0 d-lg-none contact-hr" />
+				<hr class="col-11 mx-auto my-2 py-0 d-lg-none" style="background-color: white; border: none; height: 1px;" />
 
-				<div class="row footer pt-4 col-lg-5 mb-lg-0">
-					<p class="col col-7 text-white offset-1 mb-lg-0">
+				<div class="row footer pt-4 pt-lg-5 mt-lg-5 col-lg-12 mb-lg-0">
+					<p class="col col-7 text-white offset-1 offset-lg-0 col-lg-10 mb-lg-0">
 						&copy; 2024 V2 OCHEGO
 					</p>
 					<a
 						href="#"
-						class="mb-lg-0 col col-4 link-underline link-underline-opacity-0 fw-bold"
+						class="mb-lg-0 col col-4 col-lg-2 link-underline link-underline-opacity-0 fw-bold"
 						><p class="text-info fs-6 ps-5 mb-lg-0">&uarr; up</p></a
 					>
 				</div>
