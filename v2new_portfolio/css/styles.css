@@ -6,6 +6,10 @@ body {
 	margin: 0 auto;
 }
 
+hr {
+	border: none;
+}
+
 .handlee-regular {
 	font-family: "Handlee", cursive;
 	font-weight: 400;
@@ -240,6 +244,13 @@ nav,
 	line-height: 0.2;
 }
 
+.p-br2 {
+	color: white;
+	font-size: 45px;
+	font-weight: 500;
+	line-height: 0.9;
+}
+
 .creativity {
 	line-height: 1.7;
 }
@@ -258,7 +269,7 @@ nav,
 }
 
 .textarea::placeholder {
-	color: #f8f9fa !important;
+	color: #9c9c9c !important;
 	opacity: 1;
 }
 
