@@ -451,12 +451,6 @@ a .link-underline-opacity-100-hover {
 		/* transition: all 200ms ease-in-out; */
 	}
 
-	.btn-contact {
-		position: absolute;
-		height: 170px;
-		width: 170px;
-	}
-
 	.contact hr {
 		position: absolute;
 		top: 50%;
@@ -483,5 +477,15 @@ a .link-underline-opacity-100-hover {
 		height: 170px;
 		position: relative;
 		margin-top: -80px;
+	}
+
+	.contact-div hr {
+		position: absolute;
+		top: 50%;
+	}
+	.btn-contact {
+		position: absolute;
+		height: 170px;
+		width: 170px;
 	}
 }
