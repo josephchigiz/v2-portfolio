@@ -422,7 +422,17 @@ a .link-underline-opacity-100-hover {
 		justify-content: center;
 		margin-top: -40px;
 	}
+
+	.contact-div {
+		position: relative;
+		height: 150px;
+	}
+	.contact-div hr {
+		position: absolute;
+		top: 40%;
+	}
 	.btn-contact {
+		position: absolute;
 		height: 150px;
 		width: 150px;
 	}
