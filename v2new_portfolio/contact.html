@@ -218,45 +218,46 @@
 						</div>
 					</div>
 					<div class="col-11 col-lg-8 mx-auto order-lg-first">
-						<form action="" class="mb-3 col col-11">
+						<form id="form" class="mb-3 col col-11">
 					    <hr class="mb-0" style="height: 1px; background-color: white; border: none;" />
 							<label
 								class="d-block ms-3 mt-5 form-label text-white"
-								for="name"
+								for="from_name"
 								> <span class="" style="color: #575555;">1.</span> What's your name?</label
 							>
 							<input
 								class="d-block ms-3 mt-2 mb-5 border-0 bg-transparent text-light"
 								type="text"
-								name="name"
+								name="from_name" id="from_name"
 								value=""
-								placeholder="John Doe *"
+								placeholder="John Doe *" required
 							/>
 	
 							<hr class="my-0 " style="height: 1px; background-color: white; border: none;"/>
 							<label
 								class="d-block ms-3 mt-5 form-label text-white"
-								for="name"
+								for="from_email"
 								><span class="" style="color: #575555;">2.</span>What's your email?</label
 							>
 							<input
 								class="d-block ms-3 mb-5 mt-2 border-0 bg-transparent text-light"
-								type="text"
-								name="name"
+								type="email"
+								name="from_email"
+                id="from_email"
 								value=""
-								placeholder="example@email.com *"
+								placeholder="example@email.com *" required
 							/>
 	
 							<hr class="my-0" style="height: 1px; background-color: white; border: none;"/>
 							<label
 								class="d-block ms-3 mt-5 form-label text-white"
-								for="name"
+								for="service"
 								><span class="" style="color: #575555;">3.</span>What services are you looking for?</label
 							>
 							<input
 								class="d-block ms-3 mt-2 mb-5 border-0 bg-transparent text-light"
 								type="text"
-								name="name"
+								name="service" id="service"
 								value=""
 								placeholder="web development, web design... *"
 							/>
@@ -269,7 +270,7 @@
 							>
 							<textarea
 								class="ps-0 mt-2 form-control ms-3 mb-5 border-0 bg-transparent text-light textarea"
-								name="message"
+								name="message" id="message"
 								rows="1"
 								id=""
 								placeholder="Hello Joe, I'd like us to work on..."
@@ -280,16 +281,11 @@
 
 				<div class="container col-11 d-block mx-auto contact-div mx-md-auto my-5 pb-5 text-white">
 					<hr class="col-11 col-lg-12 mx-auto my-lg-0 py-lg-0" style="background-color: white; border: none; height: 5px; " />
-					<a
-						href="contact.html"
-						class="link-underline link-underline-opacity-0"
-						><button
-							class="rounded-circle offset-7 offset-md-7 offset-lg-8 fw-medium btn-contact wow animate__animated animate__fadeInLeft"
+					<button id="send_email" type="submit" form="form" class="rounded-circle offset-7 offset-md-7 offset-lg-8 fw-medium btn-contact wow animate__animated animate__fadeInLeft"
 							data-wow-duration="2s"
 						>
 							Send it <i class="fa fa-paper-plane"></i>
-						</button></a
-					>
+						</button>
 				</div>
 			</div>
 
@@ -370,6 +366,13 @@
 			</div>
 		</section>
 		<script src="scripts/app.js"></script>
+		<script type="text/javascript"
+                src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
+            </script>
+
+            <script type="text/javascript">
+                emailjs.init('aI7QUWYpkLZMaCxeG')
+            </script>
 		<script
 			src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
 			integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
