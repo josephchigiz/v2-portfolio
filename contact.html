@@ -32,6 +32,39 @@
 		/>
 	</head>
 	<body style="background-color: #1c1d20">
+    <style>
+    .cursor {
+  width: 35px;
+  height: 35px;
+  background-color: rgba(221, 226, 255, 0.8);
+  border-radius: 50%;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  pointer-events: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition:
+    width 0.3s ease,
+    height 0.3s ease-out;
+}
+
+.inner {
+  width: 0px;
+  height: 0px;
+  background-color: rgba(40, 41, 45, 0.7);
+  border-radius: 50%;
+  position: absolute;
+  pointer-events: none;
+  transition:
+    width 0.3s ease,
+    height 0.3s ease-out;
+}
+    </style>
+<div class="cursor" id="cursor">
+      <div class="inner" id="inner">
+      </div>
+    </div>
 		<header>
 			<nav
 				class="navbar navbar-expand-md px-md-5 pt-lg-4 px-3 pt-3 mx-lg-auto"
@@ -41,7 +74,7 @@
 						<a
 							class="link-underline link-underline-opacity-0 logo-custom text-white"
 							href="index.html"
-							><img src="assets/logo_no_bg_white.png" width="120" alt=""></a
+							><img src="assets/light-theJoernal.svg" width="90" alt=""></a
 						>
 					</div>
 					<button
