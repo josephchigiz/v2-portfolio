@@ -29,7 +29,8 @@ document.addEventListener("mouseover", (e) => {
   if (
     e.target.tagName === "A" ||
     e.target.tagName === "I" ||
-    e.target.className === "ham-menu"
+    e.target.className === "ham-menu" ||
+    e.target.className === "logo-img"
   ) {
     cursor.style.height = "45px";
     cursor.style.width = "45px";
@@ -42,7 +43,8 @@ document.addEventListener("mouseout", (e) => {
   if (
     e.target.tagName === "A" ||
     e.target.tagName === "I" ||
-    e.target.className === "ham-menu"
+    e.target.className === "ham-menu" ||
+    e.target.className === "logo-img"
   ) {
     cursor.style.height = "35px";
     cursor.style.width = "35px";
