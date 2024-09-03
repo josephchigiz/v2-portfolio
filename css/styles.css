@@ -10,6 +10,10 @@ a {
   cursor: none;
 }
 
+.offcanvas-body a {
+  cursor: pointer;
+}
+
 .cursor {
   width: 35px;
   height: 35px;

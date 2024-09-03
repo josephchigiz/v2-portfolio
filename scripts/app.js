@@ -26,7 +26,11 @@ animate();
 
 // center circle on link hover
 document.addEventListener("mouseover", (e) => {
-  if (e.target.tagName === "A") {
+  if (
+    e.target.tagName === "A" ||
+    e.target.tagName === "I" ||
+    e.target.className === "ham-menu"
+  ) {
     cursor.style.height = "45px";
     cursor.style.width = "45px";
     inner.style.height = "35px";
@@ -35,7 +39,11 @@ document.addEventListener("mouseover", (e) => {
 });
 
 document.addEventListener("mouseout", (e) => {
-  if (e.target.tagName === "A") {
+  if (
+    e.target.tagName === "A" ||
+    e.target.tagName === "I" ||
+    e.target.className === "ham-menu"
+  ) {
     cursor.style.height = "35px";
     cursor.style.width = "35px";
     inner.style.height = "0px";
